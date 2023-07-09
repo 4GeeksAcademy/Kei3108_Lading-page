@@ -12,7 +12,7 @@ import Footer from "./Footer";
 let cardsInfo = [
 		{title:'Poodle',
 		 image: 'https://http2.mlstatic.com/D_NQ_NP_926795-MLM29002065272_122018-O.webp',
-		 description:'Poodles are regarded as one of the most intelligent breeds in the world.', 
+		 description:'The Poodle is an impressive dog, as the many best-in-show winners from this dog breed can attest.', 
 		 url: 'https://dogtime.com/dog-breeds/poodle#:~:text=Poodles%20are%20regarded%20as%20one,t%20physically%20and%20mentally%20stimulated.'},
 		{title:'Pomeranian', 
 		 image: 'https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Pomeranian1.jpg?h=60f40036&itok=o-Gng8D3',
@@ -32,15 +32,17 @@ let cardsInfo = [
 
 	const Home = () => {
 		return (
-			<div className="container text-center">
+			<div className="container-fluid text-center">
 				<Navbar/>
-				<Jumbotron/>				
-				<div className="row align-items">
-					{
-						cardsInfo.map ((value, index) => {
-						return <Card title={value.title} image={value.image} description={value.description} url={value.url} key={index} />
-						})
-					}	
+				<div className="container text-center">
+					<Jumbotron/>				
+					<div className="row align-items">
+						{
+							cardsInfo.map ((value, index) => {
+							return <Card title={value.title} image={value.image} description={value.description} url={value.url} key={index} />
+							})
+						}	
+					</div>
 				</div>
 				<Footer/>
 			</div>

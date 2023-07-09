@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
-
 const Card = (props) => {
     return (
         <> 
         <div className="col col-md-3 mt-4 p-3 rounded">
             <div class="card">
                     <img src={props.image} class="card-img-top img-fluid" alt="..."></img>
-                <div className="card-body p-3">
+                <div className="card-body p-1">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.description}</p>
                 </div>

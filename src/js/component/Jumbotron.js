@@ -8,7 +8,7 @@ const JumbotronStyle = {
 const Jumbotron = () => {
     return(
         
-        <div className="jumbotron jumbotron-fluid rounded" style={JumbotronStyle}>
+        <div className="jumbotron rounded" style={JumbotronStyle}>
             <div className="container">
                 <h1 className="display-2"><strong>Dog Breeds!</strong></h1>
                 <p className="lead">Detailed profiles of more than 500 dog breeds. Includes personality, history, dog pictures, dog health info, and more. Find the dog breed that is right for you.</p>
